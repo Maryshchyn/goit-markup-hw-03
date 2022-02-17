@@ -1,0 +1,216 @@
+
+
+
+:root{
+    /* Основні шрифти */
+     --main-font: "Roboto", sans-serif;
+     --secondary-font: "Raleway", sans-serif;
+     /*Світла тема тексту*/
+     --accent-txt: #2196F3;
+     --primary-light-txt: #212121;
+     --secondary-light-txt: #757575;
+     /*Темна тема тексту*/
+     --primary-dark-txt: #FFFFFF;
+     --secondary-dark-txt: rgba(255, 255, 255, 0.6);
+     /*Світла тема фону*/
+     --primary-light-bg: #F5F4FA;
+     /*Темна тема фону*/
+     --primary-dark-bd: #2F303A;  
+
+} 
+
+body{
+     font-family: var(--main-font);
+     font-weight: 270;
+     Font-size: 14px;
+     Line-height: 1.67;
+     letter-spacing: 0.03em;
+     color: var(--secondary-light-txt);
+}
+
+.list{
+     list-style: none;
+}
+.link{
+     text-decoration: none;
+}
+
+/* header */
+.header-logo{
+     font-family: "Raleway", sans-serif;
+     font-weight: 600;
+     Font-size: 26px;
+     line-height: 1.19;
+     letter-spacing: 0.03em;
+     color: var(--primary-light-txt);
+}
+.web{
+     color: var(--accent-txt);
+}
+.nav-link{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--primary-light-txt);
+}
+.nav-link:hover,
+.nav-link:focus{
+     color: var(--accent-txt);
+}
+.contact-mail{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--secondary-light-txt);
+}
+.contact-mail:hover,
+.contact-mail:focus{
+      color: var(--accent-txt);
+}
+.contact-phone{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--secondary-light-txt);
+}
+.contact-phone:hover,
+.contact-phone:focus{
+      color: var(--accent-txt);
+}
+.hero-title{
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary-dark-txt);
+}
+.hero{
+      background-color: var(--primary-dark-bd);
+}
+.hero-btn{
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.87;
+      letter-spacing: 0.06em;
+      color: var(--primary-dark-txt);
+      background-color: var(--accent-txt);
+      cursor: pointer;
+}
+.advice-subtitle{
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--primary-light-txt);
+}
+.advice-descr{
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: var(--secondary-light-txt);
+}
+.work-title{
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.16;
+      letter-spacing: 0.03em;
+      color: var(--primary-light-txt);
+}
+.about-us-name{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+      color: var(--primary-light-txt);
+}
+.about-us-position{
+      font-size: 16px;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+      color: var(--secondary-light-txt);
+}
+.footer-all{
+      font-style: normal;
+}
+.footer-link{
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: var(--primary-dark-txt);
+}
+.footer-all{
+      font-style: normal;
+}
+.footer-mail{
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+}
+.footer-phone{
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+}
+.footer-logo{
+       font-family: "Raleway", sans-serif;
+       font-weight: 600;
+       font-size: 26px;
+       line-height: 1.19;
+       letter-spacing: 0.03em;
+       color: var(--primary-dark-txt);
+}
+.footer{
+     background-color: var(--primary-dark-bd);
+}
+.contact-mail-portfolio{
+       font-style: 400;
+       font-weight: 500;
+       font-size: 14px;
+       line-height: 1.14;
+       letter-spacing: 0.02em;
+       color: var(--secondary-light-txt);
+}
+.contact-phone-portfolio{
+       font-style: 400;
+       font-weight: 500;
+       font-size: 14px;
+       line-height: 1.14;
+       letter-spacing: 0.02em;
+       color: var(--secondary-light-txt);
+}
+.buttons-btn{
+       font-family: inherit;
+       font-weight: 500;
+       font-size: 16px;
+       line-height: 1.62;
+       letter-spacing: 0.03em;
+       color: var(--primary-light-txt);
+       background-color: var(--secondary-light-bg);
+       cursor: pointer;
+}
+.buttons-btn:hover,
+.buttons-btn:focus{
+      color: var(--primary-dark-txt);
+      background-color: var(--accent-txt);
+}
+.projekts-subtitle{
+       font-weight: 700;
+       font-size: 18px;
+       line-height: 2;
+       letter-spacing: 0.06em;
+       color: var(--primary-light-txt);
+}
+.projekts-desc{
+       font-size: 16px;
+       line-height: 1.87;
+       letter-spacing: 0.03em;
+       color: var(--secondary-light-txt);
+}
