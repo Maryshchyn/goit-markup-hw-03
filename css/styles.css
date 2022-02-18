@@ -27,7 +27,11 @@ body{
      letter-spacing: 0.03em;
      color: var(--secondary-light-txt);
 }
-h1, h2, h3, p, ul{
+h1,
+h2, 
+h3, 
+p, 
+ul{
       margin-top: 0;
       margin-bottom: 0;
 }
@@ -154,17 +158,18 @@ h1, h2, h3, p, ul{
 }
 .hero{
       background-color: var(--primary-dark-bd);
+      padding: 200px 0 200px 0;
 }
 .hero-btn{
       display: flex;
       align-items: center;
       margin-left: auto;
       margin-right: auto;
-      width: 200px;
+      min-width: 200px;
       max-height: 50px;
       padding: 10px 32px;
       font-family: inherit;
-      font-weight: 400;
+      font-weight: 700;
       font-size: 16px;
       line-height: 1.87;
       letter-spacing: 0.06em;
@@ -211,26 +216,46 @@ h1, h2, h3, p, ul{
 .work-title{
       margin-right: auto;
       margin-left: auto;
-      font-weight: 700;
       font-size: 36px;
       line-height: 1.16;
       letter-spacing: 0.03em;
       color: var(--primary-light-txt);
 }
 .work-title-container{
-      margin-left: auto;
-      margin-right: auto;
-      width: 376px;
-      /* height: 42px; */
+      text-align: center;
       margin-bottom: 50px;
 }
 .work-list{
       display: flex;
 }
+.work-item{
+      margin-left: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      /* margin-bottom: 94px; */
+}
+/* about-us */
+
+.about-us-item{
+      margin-right: 30px;
+      font-size: 36px;
+      line-height: 1.16;
+      letter-spacing: 0.03em;
+      color: var(--primary-light-txt);
+}
+.about-us-container{
+      text-align: center;
+      margin-bottom: 50px;
+
+}
 .about-us-list{
       display: flex;
 }
+.about-us-image{
+      margin-bottom: 30px;
+}
 .about-us-name{
+      margin-bottom: 10px;
       font-weight: 500;
       font-size: 16px;
       line-height: 1.19;
@@ -244,17 +269,34 @@ h1, h2, h3, p, ul{
       color: var(--secondary-light-txt);
 }
 /* Footer */
+.footer-container{
+      padding-top: 60px ;
+      padding-bottom: 60px ;
+}
+.footer-logo{
+       font-family: "Raleway", sans-serif;
+       font-weight: 600;
+       font-size: 26px;
+       line-height: 1.19;
+       letter-spacing: 0.03em;
+       color: var(--primary-dark-txt);
+}
 .footer-all{
+      margin-top: 20px;
       font-style: normal;
+      display: flex;
+}
+.footer-item{
+      margin-bottom: 9px;
+}
+.footer-item:last-child{
+      margin: 0;
 }
 .footer-link{
       font-size: 14px;
       line-height: 1.71;
       letter-spacing: 0.03em;
       color: var(--primary-dark-txt);
-}
-.footer-all{
-      font-style: normal;
 }
 .footer-mail{
       font-size: 14px;
@@ -268,22 +310,14 @@ h1, h2, h3, p, ul{
       letter-spacing: 0.03em;
       color: rgba(255, 255, 255, 0.6);
 }
-.footer-logo{
-       font-family: "Raleway", sans-serif;
-       font-weight: 600;
-       font-size: 26px;
-       line-height: 1.19;
-       letter-spacing: 0.03em;
-       color: var(--primary-dark-txt);
-}
+
 .footer{
      background-color: var(--primary-dark-bd);
 }
-.footer-container{
-      padding-top: 60px ;
-      padding-bottom: 60px ;
-}
+/* Портфоліо*/
+
 .contact-mail-portfolio{
+       margin-left: 331px;
        font-style: 400;
        font-weight: 500;
        font-size: 14px;
@@ -300,6 +334,7 @@ h1, h2, h3, p, ul{
        color: var(--secondary-light-txt);
 }
 .buttons-btn{
+      margin-bottom: 50px;
        padding: 6px 22px;
        font-family: inherit;
        font-weight: 500;
@@ -316,7 +351,35 @@ h1, h2, h3, p, ul{
       color: var(--primary-dark-txt);
       background-color: var(--accent-txt);
 }
+.buttons-item{
+      margin-right: 8px;
+      
+}
+.buttons-item:last-child{
+      margin-right: o;
+}
+.buttons-list{
+      display: flex;
+      margin-top: 126px;
+      justify-content: center;
+      
+}
+.projekts-list{
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 94px;
+}
+.projekts-item{
+      margin-right: 30px;
+}
+.projekts-item:last-child{
+      margin-right: 0;
+}
+.projekts-image{
+      margin-bottom: 20px;
+}
 .projekts-subtitle{
+      margin-bottom: 4px;
        font-weight: 700;
        font-size: 18px;
        line-height: 2;
