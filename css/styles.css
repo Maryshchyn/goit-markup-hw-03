@@ -27,23 +27,78 @@ body{
      letter-spacing: 0.03em;
      color: var(--secondary-light-txt);
 }
+h1, h2, h3, p, ul{
+      margin-top: 0;
+      margin-bottom: 0;
+}
 
 .list{
+      padding-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
      list-style: none;
 }
 .link{
      text-decoration: none;
 }
+.section{
+      padding-top: 94px;
+      padding-bottom: 94px;
+}
+.container{
+      width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+}
 
 /* header */
+.header-container{
+      display: flex;
+      align-items: center;
+}
+.nav{
+      display: flex;
+      align-items: center;
+      
+}
 .header-logo{
+      padding-top: 24px;
+      padding-bottom: 25px;
      font-family: "Raleway", sans-serif;
      font-weight: 600;
      Font-size: 26px;
      line-height: 1.19;
      letter-spacing: 0.03em;
      color: var(--primary-light-txt);
+     align-items: center;
+     margin-right: 93px;
+     
+     }
+     
+.nav-list{
+      display: flex;
 }
+
+.contact-list{
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+}
+.nav-iten{
+      margin-right: 50px;
+}
+
+.nav-iten:last-child{
+      margin: 0;
+}
+
+.contact-mail,
+.contact-mail-portfolio{
+      margin-right: 50px;
+}
+
 .web{
      color: var(--accent-txt);
 }
@@ -80,7 +135,16 @@ body{
 .contact-phone:focus{
       color: var(--accent-txt);
 }
+/* Main */
 .hero-title{
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      width: 696px;
+      height: 120px;
+      max-width: 696px;
+      max-height: 120px;
+      text-align: center;
       font-weight: 900;
       font-size: 44px;
       line-height: 1.36;
@@ -92,16 +156,45 @@ body{
       background-color: var(--primary-dark-bd);
 }
 .hero-btn{
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      max-height: 50px;
+      padding: 10px 32px;
       font-family: inherit;
-      font-weight: 700;
+      font-weight: 400;
       font-size: 16px;
       line-height: 1.87;
       letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: 4px;
       color: var(--primary-dark-txt);
       background-color: var(--accent-txt);
       cursor: pointer;
 }
+.advice-list{
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+}
+.advice-iten{
+      margin-right: 30px;
+}
+.advice-iten:last-child{
+      margin: o;
+}
+.advice-descr{
+      width: 270px;
+      height: 75px;
+      margin-bottom: 94px;
+}
 .advice-subtitle{
+      width: 270px;
+      height: 16px;
+      margin-bottom: 10px;
       font-weight: 700;
       font-size: 14px;
       line-height: 1.14;
@@ -116,11 +209,26 @@ body{
       color: var(--secondary-light-txt);
 }
 .work-title{
+      margin-right: auto;
+      margin-left: auto;
       font-weight: 700;
       font-size: 36px;
       line-height: 1.16;
       letter-spacing: 0.03em;
       color: var(--primary-light-txt);
+}
+.work-title-container{
+      margin-left: auto;
+      margin-right: auto;
+      width: 376px;
+      /* height: 42px; */
+      margin-bottom: 50px;
+}
+.work-list{
+      display: flex;
+}
+.about-us-list{
+      display: flex;
 }
 .about-us-name{
       font-weight: 500;
@@ -135,6 +243,7 @@ body{
       letter-spacing: 0.03em;
       color: var(--secondary-light-txt);
 }
+/* Footer */
 .footer-all{
       font-style: normal;
 }
@@ -170,6 +279,10 @@ body{
 .footer{
      background-color: var(--primary-dark-bd);
 }
+.footer-container{
+      padding-top: 60px ;
+      padding-bottom: 60px ;
+}
 .contact-mail-portfolio{
        font-style: 400;
        font-weight: 500;
@@ -187,12 +300,14 @@ body{
        color: var(--secondary-light-txt);
 }
 .buttons-btn{
+       padding: 6px 22px;
        font-family: inherit;
        font-weight: 500;
        font-size: 16px;
        line-height: 1.62;
        letter-spacing: 0.03em;
        color: var(--primary-light-txt);
+       border-radius: 4px;
        background-color: var(--secondary-light-bg);
        cursor: pointer;
 }
