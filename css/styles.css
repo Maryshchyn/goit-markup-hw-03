@@ -51,8 +51,8 @@ ul{
 }
 .container{
       width: 1200px;
-      padding-left: 15px;
-      padding-right: 15px;
+      /* padding-left: 15px;
+      padding-right: 15px; */
       margin-left: auto;
       margin-right: auto;
 }
@@ -98,9 +98,11 @@ ul{
       margin: 0;
 }
 
-.contact-mail,
-.contact-mail-portfolio{
+.contact-item{
       margin-right: 50px;
+}
+.contact-item:last-child{
+      margin-right: 0;
 }
 
 .web{
@@ -193,8 +195,6 @@ ul{
 }
 .advice-descr{
       width: 270px;
-      height: 75px;
-      margin-bottom: 94px;
 }
 .advice-subtitle{
       width: 270px;
@@ -221,6 +221,9 @@ ul{
       letter-spacing: 0.03em;
       color: var(--primary-light-txt);
 }
+.work{
+      padding-top: 0;
+}
 .work-title-container{
       text-align: center;
       margin-bottom: 50px;
@@ -229,15 +232,22 @@ ul{
       display: flex;
 }
 .work-item{
-      margin-left: 40px;
-      margin-left: auto;
-      margin-right: auto;
-      /* margin-bottom: 94px; */
+      margin-left: 30px;
+}
+.work-item:not:first-child{
+      margin-left: 30px;
+}
+img{
+      display: block;
+      max-width: 100%;
+      height: auto;
 }
 /* about-us */
 
-.about-us-item{
-      margin-right: 30px;
+.about-us{
+      background-color: var(--primary-light-bg);
+}
+.about-us-title{
       font-size: 36px;
       line-height: 1.16;
       letter-spacing: 0.03em;
@@ -251,8 +261,16 @@ ul{
 .about-us-list{
       display: flex;
 }
-.about-us-image{
+.about-us-item{
+      margin-right: 30px;
+}
+.about-us-item:last-child{
+      margin-right: 0;
+}
+.about-us-div{
+      margin-top: 30px;
       margin-bottom: 30px;
+      text-align: center;
 }
 .about-us-name{
       margin-bottom: 10px;
@@ -269,9 +287,10 @@ ul{
       color: var(--secondary-light-txt);
 }
 /* Footer */
-.footer-container{
+.footer{
       padding-top: 60px ;
       padding-bottom: 60px ;
+      background-color: var(--primary-dark-bd);
 }
 .footer-logo{
        font-family: "Raleway", sans-serif;
@@ -284,13 +303,22 @@ ul{
 .footer-all{
       margin-top: 20px;
       font-style: normal;
-      display: flex;
 }
-.footer-item{
+.footer-item:not(:last-child)
+{
       margin-bottom: 9px;
 }
-.footer-item:last-child{
-      margin: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .footer-link{
       font-size: 14px;
@@ -309,10 +337,6 @@ ul{
       line-height: 24px;
       letter-spacing: 0.03em;
       color: rgba(255, 255, 255, 0.6);
-}
-
-.footer{
-     background-color: var(--primary-dark-bd);
 }
 /* Портфоліо*/
 
@@ -334,7 +358,6 @@ ul{
        color: var(--secondary-light-txt);
 }
 .buttons-btn{
-      margin-bottom: 50px;
        padding: 6px 22px;
        font-family: inherit;
        font-weight: 500;
@@ -351,35 +374,45 @@ ul{
       color: var(--primary-dark-txt);
       background-color: var(--accent-txt);
 }
-.buttons-item{
+.buttons-item:not(:last-child)
+{
       margin-right: 8px;
-      
-}
-.buttons-item:last-child{
-      margin-right: o;
 }
 .buttons-list{
+      margin-bottom: 50px;
       display: flex;
-      margin-top: 126px;
       justify-content: center;
       
 }
 .projekts-list{
+     width: 1230px;
+     padding-left: 15px;
+     padding-right: 15px;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.flex-container{
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 94px;
 }
 .projekts-item{
-      margin-right: 30px;
+      width: 370px;
 }
-.projekts-item:last-child{
+.projekts-item:not(:last-child){
+      margin-right: 30px;
+      margin-bottom: 30px;
+}
+.projekts-item:nth-child(3n){
       margin-right: 0;
 }
-.projekts-image{
-      margin-bottom: 20px;
+
+.projekts-item-div{
+     padding: 20px 24px;
+     margin-bottom: 50px;
 }
 .projekts-subtitle{
-      margin-bottom: 4px;
+       margin-bottom: 4px;
        font-weight: 700;
        font-size: 18px;
        line-height: 2;
