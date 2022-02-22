@@ -400,6 +400,7 @@ img{
       width: 370px;
       box-sizing: border-box;
       border: 1px solid #EEEEEE;
+      
 }
 .projekts-item:not(:last-child){
       margin-right: 30px;
@@ -416,7 +417,6 @@ img{
 
 .projekts-item-div{
      padding: 20px 24px;
-     margin-bottom: 50px;
 }
 .projekts-subtitle{
        margin-bottom: 4px;
