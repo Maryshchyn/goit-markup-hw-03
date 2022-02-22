@@ -398,10 +398,13 @@ img{
 }
 .projekts-item{
       width: 370px;
+      box-sizing: border-box;
+      border: 1px solid #EEEEEE;
 }
 .projekts-item:not(:last-child){
       margin-right: 30px;
-      margin-bottom: 30px;
+      margin-bottom: 30px; 
+      
 }
 .projekts-item:nth-child(3n){
       margin-right: 0;
