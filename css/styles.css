@@ -109,6 +109,10 @@ ul{
 .contact-item:last-child{
       margin-right: 0;
 }
+.contact-item::before{
+      background-color: #2196F3;
+      width: 100px;
+}
 
 .web{
      color: var(--accent-txt);
@@ -343,6 +347,7 @@ ul{
 .about-us-icons{
       display: flex;
       margin-bottom: 30px;
+      text-align: center;
 }
 .social-link{
       display: block;
