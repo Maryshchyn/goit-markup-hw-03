@@ -114,6 +114,7 @@ ul{
       width: 100px;
 }
 
+
 .web{
      color: var(--accent-txt);
 }
@@ -144,7 +145,7 @@ ul{
 .contact-mail::before{
       content: ;
       background-color: #2F303A;
-      background-image: url(../images/тимчасова/envelope\ \(hover\)\ \(1\).png);
+      background-image: url(../images/icons.svg/icons.heder/symbol-defs.svg);
 }
 .contact-phone{
       font-weight: 500;
